@@ -1,0 +1,16 @@
+http://localhost:8080/usuario
+{
+  "nome": "",
+  "email": "",
+  "senha": ""
+}
+
+http://localhost:8080/receita
+{
+  "usuarioId":,
+  "nome": "",
+  "ingredientes": "",
+  "serve": ,
+  "descricao": "",
+  "tempoPreparo":
+}
