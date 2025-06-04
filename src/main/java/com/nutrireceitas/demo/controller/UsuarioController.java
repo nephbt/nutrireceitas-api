@@ -33,8 +33,8 @@ public class UsuarioController {
     }
 
     @PostMapping(value = "/salvar", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void save(@RequestBody UsuarioDto usuarioDto) {
-        usuarioService.save(usuarioDto);
+    public ResponseEntity<String> save(@RequestBody UsuarioDto usuarioDto) {
+        return usuarioService.save(usuarioDto);
     }
 
     @PostMapping(value = "/login", produces = MediaType.APPLICATION_JSON_VALUE)

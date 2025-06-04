@@ -20,9 +20,19 @@ public class UsuarioService {
     @Autowired
     UsuarioRepository usuarioRepository;
 
-    public void save(UsuarioDto usuarioDto) {
+    public ResponseEntity<String> save(UsuarioDto usuarioDto) {
+        Optional<Usuario> usuarioExistente = usuarioRepository.findByEmail(usuarioDto.getEmail());
+
+        if (usuarioExistente.isPresent()) {
+            return ResponseEntity
+                    .status(HttpStatus.CONFLICT)
+                    .body("Email já cadastrado.");
+        }
+
         Usuario entity = UsuarioMapper.INSTANCE.usuarioDTOToUsuario(usuarioDto);
         usuarioRepository.save(entity);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body("Usuário cadastrado com sucesso.");
     }
 
     public List<UsuarioDto> findAll() {

@@ -7,7 +7,6 @@ http://localhost:8080/usuario
 
 http://localhost:8080/receita
 {
-  "usuarioId":,
   "nome": "",
   "ingredientes": "",
   "serve": ,
