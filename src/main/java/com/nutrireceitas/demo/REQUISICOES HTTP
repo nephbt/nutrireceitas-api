@@ -103,4 +103,4 @@
           "descricao": "Nova descrição",
           "tempoPreparo": {int}
         }
-        Atualiza a receita com o ID informado.
+        Atualiza a receita com o ID informado
