@@ -17,7 +17,7 @@ Você pode utilizar um dos dois métodos abaixo:
 - 💻 Via aplicação JavaFX:
 [nutrireceitas-consumo (GitHub)](https://github.com/nephbt/nutrireceitas-consumo)
 
-📌 Optando pela segunda opção, siga o passo a passo descrito no README.md
+📌 Optando pela segunda opção, siga o passo a passo descrito no [README](https://github.com/nephbt/nutrireceitas-consumo)
 
 🛠️ **CONFIGURANDO O BANCO DE DADOS**
 - 🔧 Crie um banco de dados chamado nutrireceitas no PostgreSQL
